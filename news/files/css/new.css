@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #fff;
+    --body-font-color: red;
+}
+
+html
+{
+    font-family: var(--body-font);
+    font-size:14px;
+    color:var(--body-font-color);
+    scroll-behavior: smooth;
+}
+header
+{
+width:100%;
+position: absolute;
+top:0;
+left:0;
+z-index:1;
+background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+}
+.jumbotron
+{
+    margin-bottom:4rem; 
+}
+.mybutton
+{
+    position: relative;
+    background:var(--body-font-color);
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top:.82rem;
+    left:.2rem;
+    
+}
+
+
+#newsimg
+{
+    left:50%;
+    width:100%;
+    border-radius: 8px 8px;
+}
+
+.Newsgrid
+{
+    margin:2.5rem 0;
+    border:2px solid rgba(255,255,255, .3);
+    background: #fff;
+    
+}
+
+ol
+{
+    color:#fff;
+}
+#title
+{
+    text-align: left;
+    font-size:2rem;
+    color:black;
+    font-weight: 600;
+    line-height: 120%;
+    border-bottom:2px solid rgba(255,255,255, .3);
+    word-break: break-all
+}
+
+#aara
+{
+    color: black;
+}
+
+a
+{
+    font-size: 18px;
+    color:black;
+}
+
+#description
+{
+    text-align: left;
+    font-size:1.6rem;
+    color:grey;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0px;
+    border-bottom:2px solid rgba(255,255,255, .3);
+    max-width: 100%;
+    word-break: break-all;
+    
+}
+#source
+{
+    font-style: italic;
+    word-break:break-all;
+    color:black;
+}
+p#source
+{
+    font-size: 18px;
+}
+
+.eagle
+{
+    position:relative;
+    width:4rem;
+    max-width: 5rem;
+    bottom: .2rem;
+    
+    
+}
+.navnews
+{
+    width:100%;
+display: flex;
+
+bottom:-.2rem;
+    right:4.5rem;
+
+}
+
+.top-menu
+{
+    display:flex;
+    justify-content:start;
+    position:sticky;
+}
+.mebtn
+{
+    margin:.07rem;
+}
+
+.mybuttonenter
+{
+    position: relative;
+    background:var(--body-font-color);
+    border:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom:-.2rem;
+    right:4.5rem;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding:0rem 2.4rem;
+}
+/* usa section */
+
+.openbutton
+{
+    position: relative;
+    bottom:.9rem;
+    left:1rem;
+}
+
+.closebutton
+{
+    position: relative;
+    bottom:.9rem;
+    left:1rem;
+}
+.menu-toggle
+{
+    color:white;
+    font-size:2.2rem;
+    position:absolute;
+    
+    
+}
+
+.news-list
+{
+    font-size:25px;
+}
+
+form.search
+{
+    display:flex;
+    
+}
+
+.search-btn
+{
+    color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.input
+{
+    border:1px solid black;
+    border-radius:10px 10px;
+    margin:.5rem;
+}
+
+.russia-search {
+    counter-reset: li; 
+    list-style: none; 
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    
+    }
+    .rounded li {
+    line-height: 1rem;
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em -2rem;
+    background: white;
+    color: #444;
+    text-decoration: none;
+    border:2px black solid;
+    transition: .3s ease-out;
+    }
+    .rounded li:hover {background: #E9E4E0;}
+    .rounded li:hover:before {transform: rotate(360deg);}
+    .rounded li:before {
+        
+        font-size: 25px;
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left:-.5rem;
+    top: 50%;
+    margin-top: -1.34em;
+    margin-left:7px;
+    background: #8FD4C1;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all 3s ease-out;
+    }
+
+/* footer начинается здесь */
+
+footer
+{
+    padding:8rem 0;
+    background-color: #121212;
+    color:#fff;
+
+    position: relative;
+
+}
+
+.back-to-top i
+{
+    display: block;
+    color:#121212;
+    font-size:2rem;
+   
+}
+
+h4
+{
+    text-align: center;
+}
+.footer-content h4{
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content-about
+{
+    margin-bottom: 5.4rem;
+}
+
+.footer-content-about p{
+    line-height: 1.2;
+}
+.social-icons
+{
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-icons i
+{
+    font-size:1.5rem;
+    padding:.8rem 1.5rem;
+    transition:  color .5s;
+}
+
+.social-icons i:hover, .social-icons i:focus{
+color:var(--secondary-font-color);
+}
+
+
+.btn-close::before
+{
+display: none;
+}
+
+
+.theComments
+{
+    margin:5rem 0rem;
+}
+
+.user
+{
+    font-weight: bold;
+    color:#121212;
+
+}
+
+.time
+{
+    color:gray;
+}
+
+.userComment
+{
+    color:#121212;
+}
+
+.replies
+{
+    margin-left: 1rem;
+}
+
+.replies .comment
+{
+    margin-top: 1rem;
+}
+
+
+.open .fa-times
+{
+display: block;
+}
+
+.open .fa-bars
+{
+    display: none;
+}
+
+
+.open .btnReg
+{
+display: block;
+}
+
+.open .btnClose
+{
+    display: none;
+}
+
+.open .nav-list
+{
+    opacity: .95;
+    
+    transform: translateX(0);
+}
+
+
+.open .nav::before
+{
+    opacity:1;
+    transform: scale(1);
+}
+
+#registerModal input, #logInModal input
+{
+    margin-top:1rem;
+}
+
+.rrrapido
+{
+    color:orange;
+}
+
+.pleasework
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width: 1400px )
+{
+    .Newsgrid
+{
+    margin:0 auto;
+    margin:2.5rem 0;
+    border:2px solid rgba(255,255,255, .3);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-md-3
+{
+    max-width: 40%;
+}
+#newsimg
+{
+    margin-left:82%;
+    width:100%;
+    border-radius: 8px 8px;
+}
+
+.news-column
+{
+    left:20%
+}
+}
